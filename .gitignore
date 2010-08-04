@@ -1,0 +1,9 @@
+# Compiled source #
+###################
+/build
+/debian/qontacts
+Makefile
+
+# Ignore these specific user files as well #
+#####################
+*.pro.user
