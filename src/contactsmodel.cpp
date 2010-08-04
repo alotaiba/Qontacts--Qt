@@ -62,8 +62,10 @@ QList<ContactData>* ContactsModel::getUpdateableContacts()
     QMapIterator<QString, QString> i(*iAvailableManagers);
     while (i.hasNext()) {
         i.next();
+        QContactSortOrder sortOrder;
+        sortOrder.setDetailDefinitionName(QContactName::DefinitionName, QContactName::FieldFirstName);
         QContactManager *manager = QContactManager::fromUri(i.value());
-        QList<QContactLocalId> contacts = manager->contactIds();
+        QList<QContactLocalId> contacts = manager->contactIds(sortOrder);
         for(int contactIdx = 0; contactIdx < contacts.count(); contactIdx++) {
             QContact contact = manager->contact(contacts.at(contactIdx));
             ContactData contactData;

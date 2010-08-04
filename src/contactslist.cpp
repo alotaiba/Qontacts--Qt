@@ -177,7 +177,7 @@ void ContactsList::updateSelectedContacts()
             iProgressDialog->setModal(true);
             iProgressDialog->setWindowTitle("Qontacts");
             iProgressDialog->setLabelText("Preparing to update your contacts...");
-            iProgressDialog->setMaximum(minValue);
+            iProgressDialog->setMaximum(maxValue);
             iProgressDialog->setMinimum(minValue);
             iProgressDialog->setValue(minValue);
             iProgressDialog->setCancelButtonText(QString());

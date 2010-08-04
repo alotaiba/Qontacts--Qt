@@ -1,5 +1,5 @@
 TARGET      = qontacts
-VERSION 	= 0.9.4
+VERSION 	= 0.9.5
 HEADERS     += mainwindow.h \
 			contactslist.h \
 			contactpreview.h \

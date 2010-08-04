@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Version=0.9.0
+Version=0.9.5
 Type=Application
 Name=Qontacts
 Exec=/usr/bin/qontacts
@@ -8,5 +8,3 @@ Icon=qontacts
 X-HildonDesk-ShowInToolbar=true
 X-Window-Icon=qontacts
 X-Window-Icon-Dimmed=qontacts
-X-Osso-Type=application/x-executable
-X-Osso-Service=com.mawqey.qontacts
